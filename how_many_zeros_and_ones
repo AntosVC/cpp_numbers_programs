@@ -1,0 +1,35 @@
+#include <iostream>
+#include <stdio.h>
+#include <cstdlib>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+
+  int one = 0;
+  int zero = 0;
+  int random;
+  system("color a");
+
+  for (int i = 0; i<100000;i++)
+  {
+    random = rand() % 2;
+    cout << random;
+    if (random == 1)
+    {
+      one++;
+    }
+    else if(random == 0)
+    {
+      zero++;
+    }
+  }
+
+  cout<<"\n";
+  cout<<"\n";
+  cout<<"This string include "<<one<<" ones i "<<zero<<" zeros."<<endl;
+
+  return 0;
+}
