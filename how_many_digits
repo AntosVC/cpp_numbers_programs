@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+  long long number = 0;
+  long long i = 0;
+
+  cout<<"Enter the number: ";
+  cin>>number;
+
+  while (number != 0)
+  {
+    number = number/10;
+    i++;
+  }
+
+  cout<<"This numer has "<<i<<" digits."<< '\n';
+
+  return 0;
+}
